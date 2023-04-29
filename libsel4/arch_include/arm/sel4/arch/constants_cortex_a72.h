@@ -6,7 +6,7 @@
 
 #pragma once
 
-#include <sel4/config.h>
+#include <autoconf.h>
 
 #if !defined(CONFIG_ARM_CORTEX_A72)
 #error CONFIG_ARM_CORTEX_A72 is not defined

@@ -6,7 +6,7 @@
 
 #pragma once
 
-#include <sel4/config.h>
+#include <autoconf.h>
 #include <stdint.h>
 
 #if (defined CONFIG_BENCHMARK_TRACK_KERNEL_ENTRIES || defined CONFIG_DEBUG_BUILD)

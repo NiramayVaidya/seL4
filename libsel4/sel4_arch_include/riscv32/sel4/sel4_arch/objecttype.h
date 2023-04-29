@@ -6,7 +6,7 @@
 
 #pragma once
 
-#include <sel4/config.h>
+#include <autoconf.h>
 
 typedef enum _mode_object {
     seL4_ModeObjectTypeCount = seL4_NonArchObjectTypeCount

@@ -6,7 +6,7 @@
 
 #pragma once
 
-#include <sel4/config.h>
+#include <autoconf.h>
 
 typedef enum _object {
     seL4_ARM_SmallPageObject = seL4_ModeObjectTypeCount,

@@ -101,7 +101,6 @@ function(genbf target_prefix pbf_location bf_location header_output)
         ${target_prefix}_pbf
         ""
         ""
-        "${bf_location}"
     )
 endfunction(genbf)
 

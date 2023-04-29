@@ -62,13 +62,7 @@ if("${CROSS_COMPILER_PREFIX}" STREQUAL "")
                 "arm-none-eabi-"
             )
         elseif(${sel4_arch} STREQUAL "aarch64")
-            FindPrefixedGCC(
-                CROSS_COMPILER_PREFIX
-                "aarch64-linux-gnu-"
-                "aarch64-unknown-linux-gnu-"
-                "aarch64-none-linux-gnu-"
-                "aarch64-none-elf-"
-            )
+            FindPrefixedGCC(CROSS_COMPILER_PREFIX "aarch64-linux-gnu-" "aarch64-unknown-linux-gnu-")
         elseif(${arch} STREQUAL "riscv")
             FindPrefixedGCC(
                 CROSS_COMPILER_PREFIX
@@ -92,13 +86,7 @@ if("${CROSS_COMPILER_PREFIX}" STREQUAL "")
                 message("ARM flag is deprecated, please use AARCH32")
             endif()
         elseif(AARCH64)
-            FindPrefixedGCC(
-                CROSS_COMPILER_PREFIX
-                "aarch64-linux-gnu-"
-                "aarch64-unknown-linux-gnu-"
-                "aarch64-none-linux-gnu-"
-                "aarch64-none-elf-"
-            )
+            FindPrefixedGCC(CROSS_COMPILER_PREFIX "aarch64-linux-gnu-" "aarch64-unknown-linux-gnu-")
         elseif(RISCV32 OR RISCV64)
             FindPrefixedGCC(
                 CROSS_COMPILER_PREFIX

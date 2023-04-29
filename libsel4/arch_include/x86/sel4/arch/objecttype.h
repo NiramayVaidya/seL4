@@ -6,7 +6,7 @@
 
 #pragma once
 
-#include <sel4/config.h>
+#include <autoconf.h>
 
 typedef enum _object {
     seL4_X86_4K = seL4_ModeObjectTypeCount,

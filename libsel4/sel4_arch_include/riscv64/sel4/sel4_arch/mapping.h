@@ -6,7 +6,7 @@
  */
 
 #pragma once
-#include <sel4/config.h>
+#include <autoconf.h>
 
 #include <sel4/sel4_arch/mapping.h>
 

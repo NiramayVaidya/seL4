@@ -78,7 +78,7 @@ MAX_MESSAGE_LENGTH = 64
 
 # Headers to include
 INCLUDES = [
-    'sel4/config.h', 'sel4/types.h'
+    'autoconf.h', 'sel4/types.h'
 ]
 
 TYPES = {

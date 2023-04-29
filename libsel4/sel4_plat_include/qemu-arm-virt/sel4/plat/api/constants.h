@@ -6,7 +6,7 @@
 
 #pragma once
 
-#include <sel4/config.h>
+#include <autoconf.h>
 
 /* The QEMU virt platform can emulate various cores */
 #if defined(CONFIG_ARM_CORTEX_A15)

@@ -6,6 +6,4 @@
 
 #pragma once
 
-#include <sel4/config.h>
-
 /* nothing here */

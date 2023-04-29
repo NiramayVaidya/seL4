@@ -6,7 +6,7 @@
 
 #pragma once
 
-#include <sel4/config.h>
+#include <autoconf.h>
 /* RasPi3 uses a BCM2837 SoC with 4x Cortex-A53. */
 #include <sel4/arch/constants_cortex_a53.h>
 

@@ -5,7 +5,7 @@
  */
 
 #pragma once
-#include <sel4/config.h>
+#include <autoconf.h>
 #include <sel4/types.h>
 #include <sel4/macros.h>
 #include <sel4/invocation.h>

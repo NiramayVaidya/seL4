@@ -6,7 +6,7 @@
 
 #pragma once
 
-#include <sel4/config.h>
+#include <autoconf.h>
 #include <sel4/simple_types.h>
 
 typedef seL4_CPtr seL4_X64_PML4;

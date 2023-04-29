@@ -5,7 +5,7 @@
 -- SPDX-License-Identifier: BSD-2-Clause
 --
 
-#include <sel4/config.h>
+#include <autoconf.h>
 
 base 64
 

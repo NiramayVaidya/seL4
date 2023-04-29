@@ -6,7 +6,7 @@
 
 #pragma once
 
-#include <sel4/config.h>
+#include <autoconf.h>
 
 #ifndef CONST
 #define CONST   __attribute__((__const__))

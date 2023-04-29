@@ -6,7 +6,7 @@
 
 #pragma once
 
-#include <sel4/config.h>
+#include <autoconf.h>
 #include <sel4/macros.h>
 
 /* caps with fixed slot positions in the root CNode */
@@ -51,10 +51,6 @@ typedef struct seL4_UntypedDesc {
     seL4_Uint8 isDevice;/* whether the untyped is a device  */
     seL4_Uint8 padding[sizeof(seL4_Word) - 2 * sizeof(seL4_Uint8)];
 } seL4_UntypedDesc;
-
-SEL4_COMPILE_ASSERT(
-    invalid_seL4_UntypedDesc,
-    sizeof(seL4_UntypedDesc) == 2 * sizeof(seL4_Word));
 
 typedef struct seL4_BootInfo {
     seL4_Word         extraLen;        /* length of any additional bootinfo information */

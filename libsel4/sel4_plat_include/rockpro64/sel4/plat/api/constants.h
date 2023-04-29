@@ -6,7 +6,7 @@
 
 #pragma once
 
-#include <sel4/config.h>
+#include <autoconf.h>
 
 /* The ROCKPro64 uses a RK3399 SOC with a A53/A72 big.LITTLE design. Both cores
  * are designed to be identical

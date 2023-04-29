@@ -7,7 +7,7 @@
 #
 
 ##
-# A tool for generating bitfield structures with get/set/new methods
+# A tool for generating bifield structures with get/set/new methods
 # including Isabelle/HOL specifications and correctness proofs.
 ##
 
@@ -55,8 +55,8 @@ def var_name(name, base):
 
 # Headers to include depending on which environment we are generating code for.
 INCLUDES = {
-    'sel4': ['config.h', 'assert.h', 'stdint.h', 'util.h'],
-    'libsel4': ['sel4/config.h', 'sel4/simple_types.h', 'sel4/debug_assert.h'],
+    'sel4': ['assert.h', 'config.h', 'stdint.h', 'util.h'],
+    'libsel4': ['autoconf.h', 'sel4/simple_types.h', 'sel4/debug_assert.h'],
 }
 
 ASSERTS = {
@@ -2851,8 +2851,6 @@ if __name__ == '__main__':
     parser.add_option('--skip_modifies', action='store_true', default=False)
     parser.add_option('--showclasses', action='store_true', default=False)
     parser.add_option('--debug', action='store_true', default=False)
-    parser.add_option('--from_file', action='store', default=None,
-                      help="Original source file before preprocessing.")
 
     options, args = parser.parse_args()
     DEBUG = options.debug
@@ -3059,8 +3057,6 @@ if __name__ == '__main__':
 
                 print("end", file=out_file)
     else:
-        if options.from_file:
-            print(f"/* generated from {options.from_file} */\n", file=out_file)
         print("#pragma once\n", file=out_file)
         print('\n'.join(map(lambda x: '#include <%s>' % x,
                             INCLUDES[options.environment])), file=out_file)

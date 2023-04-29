@@ -6,7 +6,7 @@
 
 #pragma once
 
-#include <sel4/config.h>
+#include <autoconf.h>
 
 /* Actually, it's a NVIDIA-Denver2/A57 HMP big.LITTLE system */
 #if defined(CONFIG_ARM_CORTEX_A57)

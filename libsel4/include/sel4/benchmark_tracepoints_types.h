@@ -6,7 +6,7 @@
 
 #pragma once
 
-#include <sel4/config.h>
+#include <autoconf.h>
 
 #ifdef CONFIG_BENCHMARK_TRACEPOINTS
 typedef struct benchmark_tracepoint_log_entry {
